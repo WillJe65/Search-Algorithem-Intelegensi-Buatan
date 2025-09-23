@@ -1,5 +1,6 @@
 from UCS import uniform_cost_search
 from GBFS import greedy_bfs
+from ASTAR import a_star_search
 import csv
 
 def load_graph(file_path):
@@ -54,4 +55,10 @@ if __name__ == "__main__":
     print("GREEDY BACK TRACKING IDK (GBFS)")
     print("Rute = ","->".join(gbfs_path))
     print("Jarak total = ", gbfs_cost," km ")
+
+    #A*
+    astar_path, astar_cost = a_star_search(graph, heuristik,start_kota, goal_kota)
+    print("\nA STAR (A*)")
+    print("Rute = ","->".join(astar_path))
+    print("Jarak total = ", astar_cost," km ")
 
