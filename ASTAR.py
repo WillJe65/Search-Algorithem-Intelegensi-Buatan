@@ -1,23 +1,37 @@
 import heapq
 
-def a_star_search(graph, heuristic, start, goal):
+#Algoritma start search
+def a_star_search(G, start, goal, heuristic):
+
+    # f(n) = g(n) + h(n)
+    g_cost = 0
+    h_cost = heuristic[start]
+    f_cost = g_cost + h_cost
+    
+
+    queue = [(f_cost, g_cost, start, [start])] 
     visited = set()
-    pq = [(heuristic.get(start, 0), 0, start, [start])]
 
-    while pq:
-        f_cost, cost_so_far, node, path = heapq.heappop(pq)
+    #perulangan logic untuk mencari rute terbaik
+    while queue:
+        _f_cost, g_cost, node, path = heapq.heappop(queue)
 
+        #jika ketemu goal
         if node == goal:
-            return path, cost_so_far
+            return path, g_cost
 
+        #jika sudah dikunjungi
         if node in visited:
             continue
         visited.add(node)
 
-        for neighbor, dist in graph.get(node, []):
+        #untuk mengecek apakah node lain dari note
+        for neighbor, weight in G[node]:   
             if neighbor not in visited:
-                new_cost = cost_so_far + dist
-                priority = new_cost + heuristic.get(neighbor, 0)
-                heapq.heappush(pq, (priority, new_cost, neighbor, path + [neighbor]))
+                new_g_cost = g_cost + weight
+                new_h_cost = heuristic[neighbor]  
+                new_f_cost = new_g_cost + new_h_cost
 
-    return None, float('inf')
+                heapq.heappush(queue, (new_f_cost, new_g_cost, neighbor, path + [neighbor]))
+    #mengembalikan nilai
+    return None, float("inf")
