@@ -1,6 +1,20 @@
 # Search-Algorithem-Intelegensi-Buatan
+### TUGAS Minggu 4
+### INTELEGENSI BUATAN RC
+<br>
+### PROGRAM STUDI TEKNIK INFORMATIKA
 
-Kelompok :
-123140208 - Dzaky Pramadhani
-123140202 - Reyhan Oktavia
-12314148 - M. Rafly Yahya Ramadhan
+### FAKULTAS TEKNOLOGI INDUSTRI
+
+### INSTITUT TEKNOLOGI SUMATERA
+
+### 2025
+
+<br>
+# ANGGOTA KELOMPOK
+
+| Nama                    | NIM       |
+| ----------------------- | --------- |
+| Dzaky Pramadhani        | 123140208 |
+| Muhammad Rafly Yahya    | 123140148 |  
+| Reyhan Oktavia          | 123140202 |
