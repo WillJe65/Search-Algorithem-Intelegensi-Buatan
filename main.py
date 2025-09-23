@@ -4,8 +4,9 @@ from ASTAR import a_star_search
 import csv
 #menggunakan module bawaan python yaitu csv dimana digunakan untuk membaca file csv
 
-#program inti dalam algoritma searching ai
-#untuk load graph yang dimana saya simpan kedalam file csv
+#main program dalam algoritma searching ai
+
+#fungsi ini digunakan untuk load graph yang dimana saya simpan kedalam file csv
 def load_graph(file_path):
     graph = {}
     with open(file_path,'r')as f:
@@ -25,7 +26,7 @@ def load_graph(file_path):
             graph[tujuan].append((asal,jarak))
         return graph
 
-#untuk load heuristik yang dimana saya simpan kedalam file csv 
+#fungsi ini digunakan untuk load heuristik yang dimana saya simpan kedalam file csv 
 def load_heuristik(file_path):
     h = {}
     with open(file_path,'r') as f:
@@ -53,20 +54,21 @@ if __name__ == "__main__":
     start_kota = "Cilegon"
     goal_kota = "Banyuwangi"
 
-    #UCS
+    #menampilkan rute yang digunakan UCS
     ucs_path, ucs_cost = uniform_cost_search(graph,start_kota,goal_kota)
     print("UNIFORM COST SEARCH (UCS)")
     print("Rute = ","->".join(ucs_path))
     print("Jarak total = ", ucs_cost," km \n")
 
-    #GBFS
+    #menampilkan rute yang digunakan GBFS
     gbfs_path, gbfs_cost = greedy_bfs(graph, heuristik,start_kota, goal_kota)
     print("GREEDY BACK TRACKING IDK (GBFS)")
     print("Rute = ","->".join(gbfs_path))
     print("Jarak total = ", gbfs_cost," km \n")
 
-    #A*
+    #menampilkan rute yang digunakan A*
     astar_path,astar_cost = a_star_search(graph,start_kota,goal_kota,heuristik)
     print("A Star Search (A*)")
     print("Rute = ","->".join(astar_path))
     print("Jarak total = ", astar_cost," km ")
+
