@@ -14,7 +14,7 @@ def a_star_search(G, start, goal, heuristic):
 
     #perulangan logic untuk mencari rute terbaik
     while queue:
-        _f_cost, g_cost, node, path = heapq.heappop(queue)
+        f_cost, g_cost, node, path = heapq.heappop(queue)
 
         #jika ketemu goal
         if node == goal:
@@ -33,5 +33,7 @@ def a_star_search(G, start, goal, heuristic):
                 new_f_cost = new_g_cost + new_h_cost
 
                 heapq.heappush(queue, (new_f_cost, new_g_cost, neighbor, path + [neighbor]))
+                
     #mengembalikan nilai
     return None, float("inf")
+
