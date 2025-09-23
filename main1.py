@@ -56,18 +56,8 @@ if __name__ == "__main__":
     print("Rute = ","->".join(gbfs_path))
     print("Jarak total = ", gbfs_cost," km ")
 
-<<<<<<< HEAD
     #A*
     astar_path,astar_cost = a_star_search(graph,start_kota,goal_kota,heuristik)
     print("A Star Search (A*)")
     print("Rute = ","->".join(astar_path))
     print("Jarak total = ", astar_cost," km ")
-=======
-    #A*
-    astar_path, astar_cost = a_star_search(graph, heuristik,start_kota, goal_kota)
-    print("\nA STAR (A*)")
-    print("Rute = ","->".join(astar_path))
-    print("Jarak total = ", astar_cost," km ")
-
-
->>>>>>> 0f53254dd38d559bc48a81e07a7a3b1930eea876
