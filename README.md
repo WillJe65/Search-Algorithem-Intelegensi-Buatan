@@ -17,4 +17,5 @@
 | ----------------------- | --------- |
 | Dzaky Pramadhani        | 123140208 |
 | Muhammad Rafly Yahya    | 123140148 |  
-| Reyhan Oktavia          | 123140202 |
+| Reyhan Oktavian Putra   | 123140202 |
+
