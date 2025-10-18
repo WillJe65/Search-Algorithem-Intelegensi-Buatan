@@ -1,4 +1,4 @@
-# Search-Algorithem-Intelegensi-Buatan
+# Search-Algorithm-Intelegensi-Buatan
 ### TUGAS Minggu 4
 ### INTELEGENSI BUATAN RC
 <br>
@@ -18,4 +18,5 @@
 | Dzaky Pramadhani        | 123140208 |
 | Muhammad Rafly Yahya    | 123140148 |  
 | Reyhan Oktavian Putra   | 123140202 |
+
 
