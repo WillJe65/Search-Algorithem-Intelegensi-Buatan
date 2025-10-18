@@ -16,7 +16,8 @@
 | Nama                    | NIM       |
 | ----------------------- | --------- |
 | Dzaky Pramadhani        | 123140208 |
-| Muhammad Rafly Yahya    | 123140148 |  
+| Muhammad Rafly Yahya R  | 123140148 |  
 | Reyhan Oktavian Putra   | 123140202 |
+
 
 
